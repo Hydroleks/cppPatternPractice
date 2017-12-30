@@ -16,6 +16,12 @@
     <Filter Include="Patterns">
       <UniqueIdentifier>{1d6e2977-6ade-43b3-8ae3-936f721f766b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Patterns\TestObjects">
+      <UniqueIdentifier>{b38d6f80-3702-44d2-9f0b-c0a85faf4420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\TestObjects\Burgers">
+      <UniqueIdentifier>{d37116a9-2fe1-420a-9f69-72eff9a0fa3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -30,6 +36,21 @@
     <ClInclude Include="..\Patterns\Singleton.h">
       <Filter>Patterns</Filter>
     </ClInclude>
+    <ClInclude Include="..\Patterns\TestObjects\Burgers\BeefBurger.h">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\TestObjects\Burgers\Burger.h">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\TestObjects\Burgers\ChickenBurger.h">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\TestObjects\Burgers\VeganBurger.h">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\BurgerFactory.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +60,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Patterns\Singleton.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\TestObjects\Burgers\BeefBurger.cpp">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\TestObjects\Burgers\Burger.cpp">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\TestObjects\Burgers\ChickenBurger.cpp">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\TestObjects\Burgers\VeganBurger.cpp">
+      <Filter>Patterns\TestObjects\Burgers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\BurgerFactory.cpp">
       <Filter>Patterns</Filter>
     </ClCompile>
   </ItemGroup>
