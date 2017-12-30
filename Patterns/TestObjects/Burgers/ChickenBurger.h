@@ -6,5 +6,5 @@ class ChickenBurger : public Burger
 public:
 	ChickenBurger();
 	virtual ~ChickenBurger();
-	virtual void printBurgerIngredients();
+	virtual void printMainIngredients();
 };

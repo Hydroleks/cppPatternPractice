@@ -12,7 +12,7 @@ ChickenBurger::~ChickenBurger()
 	std::cout << "Chicken Burger destructor was called." << std::endl;
 }
 
-void ChickenBurger::printBurgerIngredients()
+void ChickenBurger::printMainIngredients()
 {
 	std::cout << "Main ingredient is chicken." << std::endl;
 }

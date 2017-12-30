@@ -49,7 +49,7 @@ int main()
 			{
 				myBurgers.push_back(bg);
 				bg->printDetails();
-				bg->printBurgerIngredients();
+				bg->printMainIngredients();
 			}	
 		}
 		cout << "\nPlease enter choice (numbers only for now): ";

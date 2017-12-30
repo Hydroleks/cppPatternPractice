@@ -12,7 +12,7 @@ VeganBurger::~VeganBurger()
 	std::cout << "Vegan Burger destructor is called" << std::endl;
 }
 
-void VeganBurger::printBurgerIngredients()
+void VeganBurger::printMainIngredients()
 {
 	std::cout << "Main ingredient is vegetables." << std::endl;
 }

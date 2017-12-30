@@ -3,8 +3,10 @@
 
 class Burger
 {
-protected:
+private:
 	static int total;
+
+protected:
 	std::string name;
 	float price;
 
@@ -15,6 +17,6 @@ public:
 	Burger(std::string nameSet, float priceSet);
 
 	void printDetails();
-	virtual void printBurgerIngredients() = 0;
+	virtual void printMainIngredients() = 0;
 	static int getTotal();
 };
