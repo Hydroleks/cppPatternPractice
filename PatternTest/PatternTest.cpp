@@ -21,7 +21,7 @@ int main()
 
 	cout << "****************Burger Factory*****************" << endl;
 
-	BurgerFactory* bf = new BurgerFactory();
+	unique_ptr<BurgerFactory> bf(new BurgerFactory());
 	cout << "* 0 - Shut down the burger factory. " << endl;
 	cout << "* 9 - See what the burger factory has to offer." << endl;
 	cout << "***********************************************" << endl;
@@ -29,13 +29,13 @@ int main()
 
 	string result;
 	int i;
-	std::vector<Burger*> myBurgers;
+	vector<shared_ptr<Burger>> myBurgers;
 	while (cin >> i)
 	{
 		cout << endl;
 		if (i == 0)
 		{
-			delete bf;
+			bf.reset();
 			break;
 		}
 		else if (i == 9)
@@ -44,7 +44,7 @@ int main()
 		}
 		else
 		{
-			Burger* bg = bf->createBurger(i);
+			shared_ptr<Burger> bg = bf->createBurger(i);
 			if (bg != nullptr)
 			{
 				myBurgers.push_back(bg);
@@ -55,11 +55,6 @@ int main()
 		cout << "\nPlease enter choice (numbers only for now): ";
 	}
 
-	for each(Burger* bg in myBurgers)
-	{
-		delete bg;
-		bg = nullptr;
-	}
 	myBurgers.clear();
 
 	cout << endl;

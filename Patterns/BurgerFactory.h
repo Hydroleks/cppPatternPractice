@@ -1,5 +1,6 @@
 #pragma once
 #include "Burger.h"
+#include <memory>
 
 class BurgerFactory
 {
@@ -7,6 +8,6 @@ public:
 	BurgerFactory();
 	~BurgerFactory();
 
-	Burger* createBurger(int itemChoice);
+	std::unique_ptr<Burger> createBurger(int itemChoice);
 	void printMenu();
 };

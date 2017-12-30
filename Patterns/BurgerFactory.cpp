@@ -16,18 +16,18 @@ BurgerFactory::~BurgerFactory()
 	std::cout << "Burger Factory shut down! You monster!" << std::endl;
 }
 
-Burger * BurgerFactory::createBurger(int itemChoice)
+std::unique_ptr<Burger> BurgerFactory::createBurger(int itemChoice)
 {
 	switch (itemChoice)
 	{
 	case 1:
-		return new BeefBurger();
+		return std::unique_ptr<BeefBurger>(new BeefBurger());
 		break;
 	case 2:
-		return new ChickenBurger();
+		return std::unique_ptr<ChickenBurger>(new ChickenBurger());
 		break;
 	case 3:
-		return new VeganBurger();
+		return std::unique_ptr<VeganBurger>(new VeganBurger());
 		break;
 	default:
 		std::cout << "Invalid input. Please check the Menu and try again." << std::endl;
