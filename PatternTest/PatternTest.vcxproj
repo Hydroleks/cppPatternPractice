@@ -88,7 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Patterns\TestObjects\Burgers;$(SolutionDir)Patterns\TestObjects;$(SolutionDir)Patterns;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Patterns\TestObjects\Pizzas;$(SolutionDir)Patterns\TestObjects\Burgers;$(SolutionDir)Patterns\TestObjects;$(SolutionDir)Patterns;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,6 +145,10 @@
     <ClInclude Include="..\Patterns\TestObjects\Burgers\Burger.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\ChickenBurger.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\VeganBurger.h" />
+    <ClInclude Include="..\Patterns\TestObjects\Pizzas\MeatLovers.h" />
+    <ClInclude Include="..\Patterns\TestObjects\Pizzas\PeriPeriChicken.h" />
+    <ClInclude Include="..\Patterns\TestObjects\Pizzas\PizzaBase.h" />
+    <ClInclude Include="..\Patterns\TestObjects\Pizzas\Vegeterian.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -155,6 +159,10 @@
     <ClCompile Include="..\Patterns\TestObjects\Burgers\Burger.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\ChickenBurger.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\VeganBurger.cpp" />
+    <ClCompile Include="..\Patterns\TestObjects\Pizzas\MeatLovers.cpp" />
+    <ClCompile Include="..\Patterns\TestObjects\Pizzas\PeriPeriChicken.cpp" />
+    <ClCompile Include="..\Patterns\TestObjects\Pizzas\PizzaBase.cpp" />
+    <ClCompile Include="..\Patterns\TestObjects\Pizzas\Vegeterian.cpp" />
     <ClCompile Include="PatternTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
