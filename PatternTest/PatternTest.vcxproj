@@ -88,7 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Patterns\TestObjects\Pizzas;$(SolutionDir)Patterns\TestObjects\Burgers;$(SolutionDir)Patterns\TestObjects;$(SolutionDir)Patterns;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Patterns\TestObjects\Pizzas;$(SolutionDir)Patterns\TestObjects\Burgers;$(SolutionDir)Patterns\TestObjects;$(SolutionDir)Patterns\AbstractFactory;$(SolutionDir)Patterns;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,12 +139,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Patterns\AbstractFactory\BobsBurgers.h" />
+    <ClInclude Include="..\Patterns\AbstractFactory\PestosPizzas.h" />
+    <ClInclude Include="..\Patterns\AbstractFactory\RestaurantBase.h" />
     <ClInclude Include="..\Patterns\BurgerFactory.h" />
     <ClInclude Include="..\Patterns\Singleton.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\BeefBurger.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\Burger.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\ChickenBurger.h" />
     <ClInclude Include="..\Patterns\TestObjects\Burgers\VeganBurger.h" />
+    <ClInclude Include="..\Patterns\TestObjects\FoodBase.h" />
     <ClInclude Include="..\Patterns\TestObjects\Pizzas\MeatLovers.h" />
     <ClInclude Include="..\Patterns\TestObjects\Pizzas\PeriPeriChicken.h" />
     <ClInclude Include="..\Patterns\TestObjects\Pizzas\PizzaBase.h" />
@@ -153,12 +157,15 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Patterns\AbstractFactory\BobsBurgers.cpp" />
+    <ClCompile Include="..\Patterns\AbstractFactory\PestosPizzas.cpp" />
     <ClCompile Include="..\Patterns\BurgerFactory.cpp" />
     <ClCompile Include="..\Patterns\Singleton.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\BeefBurger.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\Burger.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\ChickenBurger.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Burgers\VeganBurger.cpp" />
+    <ClCompile Include="..\Patterns\TestObjects\FoodBase.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Pizzas\MeatLovers.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Pizzas\PeriPeriChicken.cpp" />
     <ClCompile Include="..\Patterns\TestObjects\Pizzas\PizzaBase.cpp" />

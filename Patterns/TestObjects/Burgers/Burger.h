@@ -14,6 +14,6 @@ public:
 
 	Burger(std::string nameSet, float priceSet);
 
-	void printDetails();
+	virtual void printDetails();
 	virtual void printMainIngredients() = 0;
 };

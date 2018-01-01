@@ -8,6 +8,13 @@
 #include "Singleton.h"
 #include "BurgerFactory.h"
 
+#ifdef _BURGERS_
+#include "BobsBurgers.h"
+#else
+#include "PestosPizzas.h"
+#endif // _BURGERS_
+
+
 using namespace std;
 
 
@@ -56,6 +63,51 @@ int main()
 	}
 
 	myBurgers.clear();
+
+	cout << endl;
+
+#ifdef _BURGERS_
+	unique_ptr<BobsBurgers> restaurant(new BobsBurgers());
+#else
+	unique_ptr<PestosPizzas> restaurant(new PestosPizzas());
+#endif // _BURGERS_
+
+	cout << "************************************************" << endl;
+	cout << "*Abstract Food Factory (aka Restaurant example)*" << endl;
+	cout << "************************************************" << endl;
+	cout << "* 0 - Shut down the restaurant. " << endl;
+	cout << "* 9 - See what the restaurant has to offer." << endl;
+	cout << "***********************************************" << endl;
+	cout << "Please enter choice (numbers only for now): ";
+
+	result.clear();
+	vector<shared_ptr<FoodBase>> myFood;
+	while (cin >> i)
+	{
+		cout << endl;
+		if (i == 0)
+		{
+			restaurant.reset();
+			break;
+		}
+		else if (i == 9)
+		{
+			restaurant->printMenu();
+		}
+		else
+		{
+			shared_ptr<FoodBase> bg = restaurant->createFood(i);
+			if (bg != nullptr)
+			{
+				myFood.push_back(bg);
+				bg->printDetails();
+				bg->printMainIngredients();
+			}
+		}
+		cout << "\nPlease enter choice (numbers only for now): ";
+	}
+	myFood.clear();
+
 
 	cout << endl;
 	system("pause");

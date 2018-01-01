@@ -25,6 +25,9 @@
     <Filter Include="Patterns\TestObjects\Pizzas">
       <UniqueIdentifier>{3f7e5f94-e56e-4fb9-afcf-af4627b95e81}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Patterns\AbstractFactory">
+      <UniqueIdentifier>{dcc68f17-2e2d-4972-9f1e-38252f14d8df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -66,6 +69,15 @@
     <ClInclude Include="..\Patterns\TestObjects\Pizzas\Vegeterian.h">
       <Filter>Patterns\TestObjects\Pizzas</Filter>
     </ClInclude>
+    <ClInclude Include="..\Patterns\AbstractFactory\BobsBurgers.h">
+      <Filter>Patterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\AbstractFactory\PestosPizzas.h">
+      <Filter>Patterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Patterns\AbstractFactory\RestaurantBase.h">
+      <Filter>Patterns\AbstractFactory</Filter>
+    </ClInclude>
     <ClInclude Include="..\Patterns\TestObjects\FoodBase.h">
       <Filter>Patterns\TestObjects</Filter>
     </ClInclude>
@@ -106,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="..\Patterns\TestObjects\Pizzas\Vegeterian.cpp">
       <Filter>Patterns\TestObjects\Pizzas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\AbstractFactory\BobsBurgers.cpp">
+      <Filter>Patterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Patterns\AbstractFactory\PestosPizzas.cpp">
+      <Filter>Patterns\AbstractFactory</Filter>
     </ClCompile>
     <ClCompile Include="..\Patterns\TestObjects\FoodBase.cpp">
       <Filter>Patterns\TestObjects</Filter>
