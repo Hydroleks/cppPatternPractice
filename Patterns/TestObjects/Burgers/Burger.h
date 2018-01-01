@@ -1,11 +1,9 @@
 #pragma once
 #include <string>
+#include "FoodBase.h"
 
-class Burger
+class Burger : public FoodBase
 {
-private:
-	static int total;
-
 protected:
 	std::string name;
 	float price;
@@ -18,5 +16,4 @@ public:
 
 	void printDetails();
 	virtual void printMainIngredients() = 0;
-	static int getTotal();
 };

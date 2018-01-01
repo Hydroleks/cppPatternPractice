@@ -2,13 +2,11 @@
 #include "PizzaBase.h"
 #include <iostream>
 
-int PizzaBase::totalPizzas = 0;
-
 PizzaBase::PizzaBase()
-	: name("Uninitialized")
+	: FoodBase()
+	, name("Uninitialized")
 	, price (0.0f)
 {
-	++totalPizzas;
 }
 
 PizzaBase::~PizzaBase()
@@ -20,15 +18,9 @@ PizzaBase::PizzaBase(std::string nameSet, float priceSet)
 	: name(nameSet)
 	, price(priceSet)
 {
-	++totalPizzas;
 }
 
 void PizzaBase::printDetails()
 {
 	std::cout << "Pizza name: " << name << ", Price: " << price << std::endl;
-}
-
-int PizzaBase::getTotal()
-{
-	return totalPizzas;
 }
