@@ -3,12 +3,13 @@
 class Singleton
 {
 private:
-	Singleton() {}; // No default constructor access allowed.
-	Singleton(Singleton const&) {}; // No copy constructor access allowed.
-	Singleton& operator=(Singleton const&) {}; // No copy assignment access allowed.
-	static Singleton* _instance;
+	Singleton() { ; }
+	Singleton(Singleton const&) = delete; // No copy constructor access allowed.
+	Singleton(Singleton&&) = delete; // No copy constructor access allowed.
+	Singleton& operator=(Singleton const&) = delete; // No copy assignment access allowed.
+	Singleton& operator=(Singleton&&) = delete; // No move assignment access allowed.
 	
 public:
-	static Singleton* getInstance();
+	static Singleton& getInstance();
 	void doSomething();
 };

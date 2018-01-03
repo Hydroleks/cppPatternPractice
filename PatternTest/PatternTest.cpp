@@ -24,7 +24,7 @@ int main()
 
 	cout << "*******************Singleton*******************" << endl;
 
-	Singleton::getInstance()->doSomething();
+	Singleton::getInstance().doSomething();
 
 	cout << "****************Burger Factory*****************" << endl;
 
