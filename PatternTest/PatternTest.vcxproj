@@ -100,6 +100,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Patterns\TestObjects\Burgers;$(SolutionDir)Patterns\TestObjects\Pizzas;$(SolutionDir)Patterns\TestObjects;$(SolutionDir)Patterns\AbstractFactory;$(SolutionDir)Patterns;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
