@@ -34,7 +34,6 @@ int main()
 	cout << "***********************************************" << endl;
 	cout << "Please enter choice (numbers only for now): ";
 
-	string result;
 	int i;
 	vector<shared_ptr<Burger>> myBurgers;
 	while (cin >> i)
@@ -80,7 +79,6 @@ int main()
 	cout << "***********************************************" << endl;
 	cout << "Please enter choice (numbers only for now): ";
 
-	result.clear();
 	vector<shared_ptr<FoodBase>> myFood;
 	while (cin >> i)
 	{
