@@ -37,7 +37,7 @@ std::unique_ptr<Burger> BurgerFactory::createBurger(int itemChoice)
 	return nullptr;
 }
 
-void BurgerFactory::printMenu()
+void BurgerFactory::printMenu() const
 {
 	std::cout << "********BURGER MENU********\n"
 		<< "* 1: Beef Burger\n"

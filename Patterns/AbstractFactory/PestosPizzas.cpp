@@ -37,7 +37,7 @@ std::unique_ptr<FoodBase> PestosPizzas::createFood(int itemChoice)
 	return nullptr;
 }
 
-void PestosPizzas::printMenu()
+void PestosPizzas::printMenu() const
 {
 	std::cout << "********BURGER MENU********\n"
 		<< "* 1: Meat Lovers\n"

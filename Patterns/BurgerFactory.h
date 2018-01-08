@@ -9,5 +9,5 @@ public:
 	~BurgerFactory();
 
 	std::unique_ptr<Burger> createBurger(int itemChoice);
-	void printMenu();
+	void printMenu() const;
 };
